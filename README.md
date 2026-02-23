@@ -2,6 +2,33 @@
 
 A Django-based invoice generation system for interview candidates to refactor and improve.
 
+## Current Architecture
+
+```
+┌─────────────────────┐
+│  AWS EventBridge    │
+│  (Scheduled Event)  │
+└──────────┬──────────┘
+           │
+           │ HTTP POST
+           │
+           ▼
+┌─────────────────────┐
+│  Django API         │
+│  /api/invoices/     │
+│  generate/          │
+└──────────┬──────────┘
+           │
+           │
+           ▼
+┌─────────────────────┐
+│  Invoice Generation │
+│  Logic (View)       │
+└─────────────────────┘
+```
+
+**Note:** The invoice generation is currently triggered by AWS EventBridge on a schedule, calling the HTTP endpoint directly.
+
 ## Project Structure
 
 ```
