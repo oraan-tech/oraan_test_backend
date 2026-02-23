@@ -1,0 +1,255 @@
+[
+  {
+    "model": "customers.contact",
+    "pk": 1,
+    "fields": {
+      "customer_id": "CUST001",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com"
+    }
+  },
+  {
+    "model": "customers.contact",
+    "pk": 2,
+    "fields": {
+      "customer_id": "CUST002",
+      "name": "Bob Smith",
+      "email": "bob.smith@example.com"
+    }
+  },
+  {
+    "model": "customers.contact",
+    "pk": 3,
+    "fields": {
+      "customer_id": "CUST003",
+      "name": "Carol Williams",
+      "email": "carol.williams@example.com"
+    }
+  },
+  {
+    "model": "customers.contact",
+    "pk": 4,
+    "fields": {
+      "customer_id": "CUST004",
+      "name": "David Brown",
+      "email": "david.brown@example.com"
+    }
+  },
+  {
+    "model": "customers.contact",
+    "pk": 5,
+    "fields": {
+      "customer_id": "CUST005",
+      "name": "Emma Davis",
+      "email": "emma.davis@example.com"
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 1,
+    "fields": {
+      "subscription_id": "SUB001-FUTURE",
+      "customer_id": "CUST001",
+      "contact": 1,
+      "status": "future",
+      "activated_at": "2026-05-01",
+      "expires_at": "2027-05-01",
+      "amount": 100.0,
+      "addon": 10.0,
+      "committee_specific_name": "Gold Committee A",
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 2,
+    "fields": {
+      "subscription_id": "SUB001-LIVE",
+      "customer_id": "CUST001",
+      "contact": 1,
+      "status": "live",
+      "activated_at": "2025-11-23",
+      "expires_at": "2026-11-23",
+      "amount": 150.0,
+      "addon": 15.0,
+      "committee_specific_name": "Silver Committee A",
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 3,
+    "fields": {
+      "subscription_id": "SUB002-LIVE",
+      "customer_id": "CUST002",
+      "contact": 2,
+      "status": "live",
+      "activated_at": "2025-08-23",
+      "expires_at": "2026-08-23",
+      "amount": 200.0,
+      "addon": 20.0,
+      "committee_specific_name": "Platinum Committee B",
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 4,
+    "fields": {
+      "subscription_id": "SUB002-EXPIRED",
+      "customer_id": "CUST002",
+      "contact": 2,
+      "status": "expired",
+      "activated_at": "2024-08-01",
+      "expires_at": "2025-08-01",
+      "amount": 120.0,
+      "addon": 12.0,
+      "committee_specific_name": "Bronze Committee B",
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 5,
+    "fields": {
+      "subscription_id": "SUB003-FUTURE",
+      "customer_id": "CUST003",
+      "contact": 3,
+      "status": "future",
+      "activated_at": "2026-03-15",
+      "expires_at": "2027-03-15",
+      "amount": 180.0,
+      "addon": 18.0,
+      "committee_specific_name": "Diamond Committee C",
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 6,
+    "fields": {
+      "subscription_id": "SUB003-LIVE",
+      "customer_id": "CUST003",
+      "contact": 3,
+      "status": "live",
+      "activated_at": "2026-01-23",
+      "expires_at": "2027-01-23",
+      "amount": 160.0,
+      "addon": 16.0,
+      "committee_specific_name": "Gold Committee C",
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 7,
+    "fields": {
+      "subscription_id": "SUB004-LIVE-1",
+      "customer_id": "CUST004",
+      "contact": 4,
+      "status": "live",
+      "activated_at": "2025-12-23",
+      "expires_at": "2026-12-23",
+      "amount": 140.0,
+      "addon": 14.0,
+      "committee_specific_name": "Silver Committee D1",
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 8,
+    "fields": {
+      "subscription_id": "SUB004-LIVE-2",
+      "customer_id": "CUST004",
+      "contact": 4,
+      "status": "live",
+      "activated_at": "2026-02-23",
+      "expires_at": "2027-02-23",
+      "amount": 175.0,
+      "addon": 17.5,
+      "committee_specific_name": "Platinum Committee D2",
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 9,
+    "fields": {
+      "subscription_id": "SUB005-LIVE",
+      "customer_id": "CUST005",
+      "contact": 5,
+      "status": "live",
+      "activated_at": "2025-02-23",
+      "expires_at": "2026-02-23",
+      "amount": 190.0,
+      "addon": 19.0,
+      "committee_specific_name": "Gold Committee E",
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "customers.subscriptions",
+    "pk": 10,
+    "fields": {
+      "subscription_id": "SUB005-DELETED",
+      "customer_id": "CUST005",
+      "contact": 5,
+      "status": "live",
+      "activated_at": "2025-06-01",
+      "expires_at": "2026-06-01",
+      "amount": 130.0,
+      "addon": 13.0,
+      "committee_specific_name": "Bronze Committee E",
+      "is_deleted": true
+    }
+  },
+  {
+    "model": "invoices.zohoinvoice",
+    "pk": 1,
+    "fields": {
+      "customer_id": "CUST001",
+      "subscription_id": "SUB001-LIVE",
+      "subscription_id_fk": 2,
+      "contact": 1,
+      "due_date": "2025-11-11",
+      "balance": 150.0,
+      "status": "sent",
+      "committee_specific_name": "Silver Committee A",
+      "fees": 15.0,
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "invoices.zohoinvoice",
+    "pk": 2,
+    "fields": {
+      "customer_id": "CUST002",
+      "subscription_id": "SUB002-LIVE",
+      "subscription_id_fk": 3,
+      "contact": 2,
+      "due_date": "2025-08-11",
+      "balance": 200.0,
+      "status": "overdue",
+      "committee_specific_name": "Platinum Committee B",
+      "fees": 20.0,
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "invoices.zohoinvoice",
+    "pk": 3,
+    "fields": {
+      "customer_id": "CUST004",
+      "subscription_id": "SUB004-LIVE-1",
+      "subscription_id_fk": 7,
+      "contact": 4,
+      "due_date": "2025-12-11",
+      "balance": 140.0,
+      "status": "sent",
+      "committee_specific_name": "Silver Committee D1",
+      "fees": 14.0,
+      "is_deleted": false
+    }
+  }
+]
